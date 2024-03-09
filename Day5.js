@@ -133,3 +133,39 @@ console.log(Object.entries(prod1))//returns arr(key-value) inside arr(obj)
 
 //to check whether a key exist
 console.log(prod1.hasOwnProperty('rating'))
+
+
+//OBJECT DE-STRUCTURING AND JSON API INTRO
+const book = {
+    type : "spiral",
+    noOfPages : 500,
+    price : 150
+}
+
+console.log(book.noOfPages)
+console.log(book.type)
+
+//Instead of writing book. everytime, we perform destructuring of object
+const {noOfPages} = book
+console.log(noOfPages)
+
+//Key name can also be changed
+const {noOfPages:pages} = book
+console.log(pages)
+
+
+// API - data coming from backend
+/*
+Earlier APIS(values) come in the XML structure, which was very complex.
+But now, they come in JSON structure
+
+How does JSON look?
+{} -> this is json(object notation w/o name), keys should be written as strings in json
+But sometimes api are obtained in the format of arrays too as follows :-
+[
+    {},
+    {}
+]
+
+Reading API is complex, therefore we have some online tools like JSON formatter to make api readable in a format.  
+*/
