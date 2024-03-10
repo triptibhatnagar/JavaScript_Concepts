@@ -8,6 +8,20 @@ console.log(2 > 7)  //f
 console.log(2 < 7)  //t
 console.log(2 != 7) //t
 
+console.log("2">1) //t
+//Here JS automatically converts string to number
+
+console.log(null > 0) //f
+console.log(null == 0) //f
+console.log(null >= 0) //t
+/*Equality check == and comparison operators > < >= <= work differently
+Comparison converts null to number 0 and then compares
+*/
+
+console.log(undefined > 0) //f
+console.log(undefined == 0) //f
+console.log(undefined >= 0) //f
+
 //Datatypes - Primitive and Non-Primitive
 /*
 Primitive datatypes are call by value and non-primitive datatypes are call by reference.
