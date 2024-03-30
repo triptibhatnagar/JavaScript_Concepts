@@ -72,3 +72,5 @@ li1.style.backgroundColor = 'black'
 li1.style.padding = '1px'
 li1.style.marginBottom = '2px'
 li1.innerText = 'Special Offer Item'
+
+//This is all about selecting an individual element and manipulating it.
