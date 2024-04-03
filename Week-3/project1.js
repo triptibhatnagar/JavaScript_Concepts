@@ -10,18 +10,20 @@ allBtns.forEach((btn) => {
     btn.addEventListener('click', (event) => {
         console.log(event);
         console.log(event.target);// tells about who occured the event
-        // if statements
-        if (event.target.id === 'deeppink') {
-            body.style.backgroundColor = event.target.id;//bg-color of body will be changed on mouseclick to a button
-          }
-        if (event.target.id === 'white') {
-            body.style.backgroundColor = event.target.id;
-          }
-        if (event.target.id === 'blue') {
-            body.style.backgroundColor = event.target.id;
-          }
-        if (event.target.id === 'yellow') {
-            body.style.backgroundColor = event.target.id;
+
+        switch(event.target.id) {
+          case 'deeppink' : 
+          body.style.backgroundColor = event.target.id;
+          break;
+          case 'white' : 
+          body.style.backgroundColor = event.target.id;
+          break;
+          case 'yellow' : 
+          body.style.backgroundColor = event.target.id;
+          break;
+          case 'blue' : 
+          body.style.backgroundColor = event.target.id;
+          break;
         }
     })
 })
